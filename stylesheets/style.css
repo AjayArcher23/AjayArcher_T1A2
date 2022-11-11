@@ -25,11 +25,20 @@ header {
     padding-bottom: 4px;
 
 } 
-.website-desc {  
+.home-text {  
     border: solid black 3px; 
     padding-left: 5px; 
-    display: flex;
+    display: flex; 
+    flex-direction: column;
 } 
 footer { 
     color: rgb(153, 150, 150);
-} 
+}  
+.blog-posts { 
+    display: flex; 
+    justify-content: space-around;
+}
+.blog-posts img { 
+    width: 250px; 
+    height: auto;
+}
