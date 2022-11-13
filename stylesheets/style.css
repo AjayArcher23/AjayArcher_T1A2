@@ -4,8 +4,11 @@ header {
     display: flex;
     background-color: #458B74;
 }
-
-.nav-anchors { 
+.page-header { 
+    background-color: #D6C9CC; 
+    padding: 5px;
+}
+nav a{ 
     justify-content: space-evenly;
     padding-inline: 5px; 
     text-decoration: none;  
@@ -14,13 +17,20 @@ header {
 
 } 
 .logo img { 
-    width: 50px;
+    width: 40px;
     height: auto; 
     border-radius: 50%;
+} 
+body { 
+    background-color: #c9d6d3; 
+}
+p {
+    font-family: Arial;
 }
 .home-image { 
-    width: auto; 
-    height: 40%; 
+    width: 40%; 
+    max-width: 40%;
+    height: auto; 
     justify-content: center; 
     padding-bottom: 4px;
 
@@ -31,9 +41,18 @@ header {
     display: flex; 
     flex-direction: column;
 } 
-footer { 
-    color: rgb(153, 150, 150);
-}  
+.resume-link { 
+    text-decoration: none; 
+    color: black;
+} 
+.resume-link:hover {  
+    text-decoration: none;
+    color: gray;
+} 
+.resume-link:active { 
+    text-decoration: none; 
+    color: black;
+}
 .blog-posts { 
     display: flex; 
     justify-content: space-around;
@@ -41,4 +60,28 @@ footer {
 .blog-posts img { 
     width: 250px; 
     height: auto;
+}  
+.links-header { 
+color: black;
 }
+.github a { 
+    color: white; 
+    text-decoration: none; 
+    padding: 4px; 
+    
+} 
+.github a:hover { 
+    color: yellow;
+} 
+.github img { 
+    width: 50px; 
+    height: auto;
+} 
+.github { 
+    display: flex; 
+    flex-direction: column;
+    background-color: black; 
+}
+footer { 
+    color: rgb(153, 150, 150);
+}  
