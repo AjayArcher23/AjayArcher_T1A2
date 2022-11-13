@@ -1,25 +1,37 @@
-header { 
-    list-style-type: none;
-    padding: 10px; 
-    display: flex;
-    background-color: #458B74;
-}
-.page-header { 
+/* Porfolio Website Styling */ 
+
+
+/* Nav Bar/header */ 
+nav { 
+    display: flex; 
+    flex-direction: row; 
     background-color: #D6C9CC; 
-    padding: 5px;
+    padding: 5px; 
+    justify-content: flex-start; 
 }
-nav a{ 
-    justify-content: space-evenly;
-    padding-inline: 5px; 
+nav a {  
+    padding-inline: 5px;
     text-decoration: none;  
     color: black;
-    font-size: large;
+    font-size: larger;
+    background-color: #d4b1b9;
+    padding-right: 10px;
 
 } 
-.logo img { 
-    width: 40px;
+
+
+nav a:hover { 
+    text-decoration: underline;
+} 
+/* Home Page Styling */
+nav img { 
+    max-width: 5%;
     height: auto; 
-    border-radius: 50%;
+   
+} 
+.page-header { 
+    background-color: white; 
+    padding: 5px;
 } 
 body { 
     background-color: #c9d6d3; 
@@ -27,23 +39,41 @@ body {
 p {
     font-family: Arial;
 }
-.home-image { 
-    width: 40%; 
+.home-image img{  
     max-width: 40%;
     height: auto; 
     justify-content: center; 
     padding-bottom: 4px;
-
 } 
-.home-text {  
-    border: solid black 3px; 
+.website-desc {  
     padding-left: 5px; 
     display: flex; 
-    flex-direction: column;
+    flex-direction: column; 
+    background-color: white;
 } 
+/* About Me Section Styling */  
+.about-me { 
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+}  
+.about-me p {  
+    background-color: white; 
+    padding: 7px;
+
+}
+.about-me img { 
+    max-width: 30%; 
+    height: auto; 
+    padding: 6px;  
+}
 .resume-link { 
-    text-decoration: none; 
-    color: black;
+    text-decoration: underline; 
+    color: black; 
+    font-size: large; 
+    background-color: white; 
+    padding: 5px; 
+    
 } 
 .resume-link:hover {  
     text-decoration: none;
@@ -52,36 +82,73 @@ p {
 .resume-link:active { 
     text-decoration: none; 
     color: black;
+} 
+.contact { 
+    background-color: white; 
+    padding: 5px;
 }
+/* Blog Section Styling */
 .blog-posts { 
     display: flex; 
-    justify-content: space-around;
+    background-color: white; 
+    padding-top: 10px; 
+    flex-wrap: wrap; 
+    padding-left: 7px; 
+    flex-direction: row;
+} 
+.blog-posts h5 { 
+    color: grey;
 }
 .blog-posts img { 
-    width: 250px; 
+    max-width: 40%; 
     height: auto;
-}  
-.links-header { 
-color: black;
+}   
+/* Portfolio Section */
+.work-examples { 
+    display: flex; 
+    flex-direction: column; 
+    flex-wrap: nowrap;
+} 
+.work-examples img { 
+    max-width: 40%;
+    height: auto;
 }
-.github a { 
+/* Links in footer */
+.links { 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around;
+}
+.links a { 
     color: white; 
     text-decoration: none; 
     padding: 4px; 
     
 } 
-.github a:hover { 
+.links a:hover { 
     color: yellow;
 } 
-.github img { 
+.links img { 
     width: 50px; 
     height: auto;
 } 
 .github { 
-    display: flex; 
-    flex-direction: column;
-    background-color: black; 
+    background-color: black;  
+    padding: 8px; 
+    
 }
+.LinkedIn { 
+    background-color: black;  
+    padding: 8px;
+} 
+.twitter { 
+    background-color: black;
+    padding: 8px;
+} 
+/* Footer */
 footer { 
     color: rgb(153, 150, 150);
 }  
+footer h2 { 
+    color: black;
+}
