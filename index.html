@@ -6,45 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title> 
     <link rel="stylesheet" href="./styles/index.css">
+    <script src="https://kit.fontawesome.com/d570a3c993.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
-    <header> 
-        
-            <div class="logo"> 
-                <a href="./index.html"> 
-                    <img src="./images/" alt="logo img">
-                </a>
+    <header>  
+        <!-- Logo / link to home page -->
+        <div class="logo"> 
+            <a href="./index.html"> 
+                <i class="fa-regular fa-face-smile fa-rotate-180"></i>
+            </a>
             </div> 
-                <nav class="navbar-items">
+            <!-- Navigation -->
+            <nav class="navbar-items">
                     <a href="./pages/about.html">About</a>
                     <a href="./pages/services.html">Services</a>
                     <a href="./pages/contact.html">Contact</a>
-                </nav> 
-            
+            </nav> 
     </header> 
     <main>  
-        <div class="header-text"> 
-            <h2>Hi I'm Ajay!</h2>
-        </div>
-        <div class="jumbotron-img"> 
-            <img src="./images/">
-        </div> 
-        <div class="home-text"> 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque facere quas dolores mollitia hic dolorum, voluptate atque aliquid optio quae animi omnis ea amet itaque ex reiciendis facilis et corrupti.
-            Deserunt omnis tempora minus autem, ab quas culpa reprehenderit nam dolor similique incidunt ipsam. Animi doloribus, debitis voluptatibus laborum dolore sapiente culpa labore repellat. Est nobis dolorum reprehenderit ullam aperiam.
-            Ab, aliquam. Suscipit, cum? Architecto alias totam quis veritatis illo quas magni minus officiis expedita dolorum in quos dicta ut quibusdam nisi nulla, dolore amet saepe corporis ipsam? Impedit, eveniet?
-            Inventore perspiciatis esse eos quas perferendis accusantium possimus aliquid vitae ex consequuntur odio aut incidunt asperiores quibusdam quidem unde, odit qui mollitia porro voluptate nobis eveniet consequatur! Sed, culpa temporibus.
-            Numquam corporis at delectus quisquam enim rerum suscipit ut ratione quae nisi repellat officiis molestias fuga iste magnam ipsa voluptas laudantium, repudiandae, aperiam optio id, velit provident exercitationem repellendus. Iusto?</p>
-        </div>
+        <section>   
+            <div class="intro-text"> 
+                <h2>Hey I'm Ajay!</h2>
+            </div>  
+            <div class="home-container"> 
+                 <!-- Home page main image  -->
+                <div class="jumbotron"> 
+                    <img src="./images/placeholder1.jpeg">
+                </div> 
+                <!-- Home page main text -->
+                <div class="home-text"> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque facere quas dolores mollitia hic dolorum, voluptate atque aliquid optio quae animi omnis ea amet itaque ex reiciendis facilis et corrupti.
+                    Deserunt omnis tempora minus autem, ab quas culpa reprehenderit nam dolor similique incidunt ipsam. Animi doloribus, debitis voluptatibus laborum dolore sapiente culpa labore repellat. Est nobis dolorum reprehenderit ullam aperiam.
+                    Ab, aliquam. Suscipit, cum? Architecto alias totam quis veritatis illo quas magni minus officiis expedita dolorum in quos dicta ut quibusdam nisi nulla, dolore amet saepe corporis ipsam? Impedit, eveniet?</p>
+                </div> 
+            </div>
+        </section>
     </main> 
     <footer> 
-        <div class="Social-Links"> 
-
+        <!-- Links to external social sites -->
+        <div class="social-links"> 
+            <a href="https://wwww.github.com" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://wwww.linkedin.com" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://wwww.instagram.com" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
         </div> 
-        <div class="Contact-Details"> 
-            <h4>Contact Details:</h4> 
+        <!-- Footer contact information -->
+        <div class="contact-details"> 
+            <h4>Contact Details and Address:</h4> 
             <div class="phone-number"> 
-                <h4>0404040404040</h4>
+                <h4 id="phone-digits">0404040404040</h4> 
+            </div> 
+            <div class="address-box"> 
+                <h4 id="address">1 Street St Suburb City</h4>
             </div>
         </div>
     </footer>
