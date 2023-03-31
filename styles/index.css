@@ -1,0 +1,23 @@
+header {
+  background-color: #E08585;
+  margin-bottom: 30px;
+}
+header .logo {
+  border-radius: 90%;
+}
+
+footer {
+  background-color: #E08585;
+  height: 116px;
+  width: 100%;
+}
+footer .contact-details h4 {
+  color: #d4d4d4;
+}
+
+main {
+  background-color: #d4d4d4;
+}
+main .jumbotron-img {
+  width: 300px;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,10 @@
+@import "../defaults/color";
+
+header { 
+    background-color: $primary-color; 
+    margin-bottom: 30px; 
+
+    .logo { 
+        border-radius: 90%;
+    }
+}

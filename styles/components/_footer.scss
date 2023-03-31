@@ -1,0 +1,14 @@
+@import "../defaults/color";
+
+footer { 
+    background-color: $primary-color; 
+    height: 116px; 
+    width: 100%; 
+
+    .contact-details { 
+
+        h4 { 
+            color: $primary-background;
+        }
+    }
+}

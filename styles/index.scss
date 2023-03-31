@@ -1,0 +1,11 @@
+@import "./components/header"; 
+@import "./components/footer"; 
+@import "./defaults/color";
+
+main {
+    background-color: $primary-background; 
+
+    .jumbotron-img { 
+            width: 300px;
+    }
+ }

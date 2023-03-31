@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/_header.scss","defaults/_color.scss","index.css","components/_footer.scss","index.scss"],"names":[],"mappings":"AAEA;EACI,yBCHY;EDIZ,mBAAA;AEDJ;AFGI;EACI,kBAAA;AEDR;;ACJA;EACI,yBFHY;EEIZ,aAAA;EACA,WAAA;ADOJ;ACHQ;EACI,cFTS;ACcrB;;AEXA;EACI,yBHJiB;ACkBrB;AEZI;EACQ,YAAA;AFcZ","file":"index.css"}
