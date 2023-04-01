@@ -1,8 +1,6 @@
 @import "./components/header"; 
 @import "./components/footer"; 
-@import "./defaults/color";
-
-
+@import"./defaults/color";
 
 body { 
     margin: 0; 
@@ -11,82 +9,4 @@ body {
     background-color: $primary-background; 
     overflow-x: hidden;
 
-    section {
-        width: 100vw;
-        display: flex;  
-        flex-direction: column;
-        align-items: center; 
-        justify-content: space-between;
-      
-        
-        .intro-text { 
-            color: $secondary-color; 
-        }
-        .home-container {
-            display: flex; 
-            flex-direction: column;  
-            align-items: center;
-            margin-bottom: 8px;
-            
-
-            .jumbotron { 
-                display: flex; 
-                flex-direction: column; 
-                align-items: center;
-
-                img {  
-                    border: solid $secondary-background 8px;
-                    max-width: 90%;
-                    height: 30%;
-                
-                }
-            
-            } 
-
-            .home-text { 
-                background-color: $secondary-background; 
-                max-width: 90%;
-                padding-left: 8px;
-                padding-right: 8px;
-
-                p { 
-                    color: $secondary-color;
-                }
-
-        
-            }
-        
-        } 
-    } 
 }
-@media screen and (min-width: $medium) { 
-    body {
-        section { 
-            .intro-text { 
-                align-self: flex-start;
-                padding-left: 24px;
-            }
-
-            .home-container { 
-                flex-wrap: wrap; 
-                flex-direction: row; 
-                justify-content: flex-start;
-                align-items: flex-start;
-            
-
-                .jumbotron { 
-                    max-width: 45%;
-                    
-                
-                } 
-    
-                .home-text { 
-                    max-width: 49%; 
-                    
-                
-                }
-            } 
-        }
-    }
-}
-        

@@ -1,4 +1,119 @@
 @import "../components/header";
 @import "../components/footer"; 
 @import "../defaults/color"; 
+@import"../index.scss"; 
 
+main { 
+    width: 100% ;
+
+    section {
+        display: flex ; 
+        flex-direction: column; 
+        justify-content: flex-start; 
+        align-items: center;
+        
+    
+        .about-img { 
+            margin: 10px 8px ;
+            background-color: black; 
+    
+            img { 
+                width: 90%; 
+                max-height: 25%; 
+                border: solid black 8px;              
+            }
+        } 
+    
+        .about-text {  
+            border: solid $primary-background 8px; 
+            width: 90%;
+            text-align: center; 
+            
+            h2 { 
+                font-size: 1.2em;
+                margin-bottom: 8px; 
+                background-color: $secondary-background;
+                padding: 8px;
+            } 
+    
+            .about-p { 
+                background-color: $secondary-background; 
+                padding: 8px;
+            }
+        }
+    
+        .me-img { 
+            display: flex; 
+            justify-content: center;  
+            
+            img { 
+                width:  25%;
+                height: auto;   
+            }
+        }
+        .resume-link { 
+            display: inline-block;
+            
+            padding: 8px;
+           
+            button { 
+                background-color: $primary-color; 
+                color: $primary-background; 
+            } 
+    
+            button:hover { 
+                color: $secondary-background;
+            }
+        }  
+    }
+
+    @media screen and (min-device-width: $medium) { 
+        main { 
+        
+            section { 
+                display: flex; 
+                flex-direction: row; 
+                justify-content: space-evenly; 
+            
+                flex-wrap: wrap;
+
+                .about-img { 
+                    width: 45%; 
+                              
+                    img { 
+                        margin-top: 24px;
+                    }
+                 
+                
+                }
+    
+                .about-text {  
+                
+                    max-width: 45%; 
+                    height: 70%;
+                
+    
+                    .about-p {
+                        max-width: 90%; 
+                        min-height: 80%;
+    
+                    } 
+    
+                    h2 { 
+                        max-width: 90%;
+                    }
+                }   
+    
+            .me-img {  
+                max-width: 30%; 
+                
+                img { 
+                    width: 30%; 
+                    margin-top: 24px; 
+                    
+                    }                
+                }
+            }
+        }
+    } 
+}
