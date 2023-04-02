@@ -248,6 +248,9 @@ body #services .services-container .services-box1 .services-img img, body #servi
   width: 100%;
   height: 60%;
 }
+body #services .services-container .services-box1 .services-img img:hover, body #services .services-container .services-box2 .services-img img:hover, body #services .services-container .services-box3 .services-img img:hover {
+  border: 4px solid blue;
+}
 body #services .services-container .services-box1 .services-text .services-heading, body #services .services-container .services-box2 .services-text .services-heading, body #services .services-container .services-box3 .services-text .services-heading {
   display: flex;
   justify-content: center;
@@ -281,6 +284,9 @@ body #services .services-container .services-box1 .services-text p, body #servic
   #services .services-container .services-box1 {
     order: 1;
     border-right: 8px !important;
+  }
+  #services .services-container .services-box1 .services-img img {
+    width: 98% !important;
   }
   #services .services-container .services-box2 {
     order: 2;
