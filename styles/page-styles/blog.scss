@@ -1,0 +1,104 @@
+@import "../index.scss"; 
+@import"../defaults/color";
+@import"../components/footer";
+@import"../components/header";
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Source Serif Pro', serif; 
+    box-sizing: border-box;
+} 
+a { 
+    text-decoration: none;
+} 
+
+body { 
+    margin: 0px; 
+    padding: 0px; 
+    font-family: 'Source Serif Pro', serif;;
+} 
+
+#blog { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    padding: 40px; 
+    border: 1px solid black; 
+
+    .blog-h { 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        flex-direction: column;
+    
+        span { 
+        color: $secondary-background;
+        }    
+        h3 { 
+            font-size: 2.4rem;
+            color: $primary-color;
+            font-weight: 600;
+    
+        }
+    } 
+    .blog-container { 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        margin: 20px 0px; 
+        flex-wrap: wrap; 
+    
+        .blog-box { 
+            background-color: $primary-color; 
+            border: 4px solid $primary-color; 
+    
+            .blog-txt { 
+                padding: 30px; 
+                display: flex; 
+                flex-direction: column; 
+    
+                span { 
+                    color: $secondary-background; 
+                    font-size: 1rem;
+                
+                }
+                .blog-title { 
+                    font-size: 1.2rem; 
+                    font-weight: 500; 
+                    color: #e1e1e1e1
+    
+                } 
+                .blog-title:hover { 
+                    color: $secondary-background; 
+    
+                }
+                p { 
+                    color: $primary-background; 
+                    font-size: 1rem; 
+                    overflow: hidden; 
+                    text-overflow: ellipsis; 
+                    margin: 20px 0px;
+                } 
+                a { 
+                    color: black; 
+                } 
+                a:hover { 
+                    color: $secondary-background
+                }
+            }   
+        }
+    } 
+    .blog-img { 
+        width: 100%; 
+        height: auto; 
+    
+        img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            object-position: center;
+        }
+    }
+}

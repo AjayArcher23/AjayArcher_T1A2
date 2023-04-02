@@ -41,7 +41,7 @@ section {
             padding-left: 8px;
             padding-right: 8px;
 
-            p { 
+            p {  
                 color: $secondary-color;
             }
 
@@ -52,7 +52,6 @@ section {
 } 
 
 @media screen and (min-width: $medium) { 
-body {
     section { 
         .intro-text { 
             align-self: flex-start;
@@ -79,5 +78,4 @@ body {
             }
         } 
     }
-}
 }

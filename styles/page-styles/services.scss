@@ -1,0 +1,118 @@
+@import "../index.scss"; 
+@import"../defaults/color";
+@import"../components/footer";
+@import"../components/header";
+
+* { 
+    font-family: 'Source Serif Pro', serif; 
+}  
+body {  
+    width: 100%; 
+
+    // Page Heading
+    #services-bigheading { 
+            font-size: 2.4rem;
+            color: $primary-color;
+            font-weight: bolder; 
+            
+    }
+    
+    #services { 
+        display: flex;
+        flex-direction: column;  
+        align-items: center;
+        
+        
+
+        .services-container {  
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+
+           
+
+            .services-box1, .services-box2, .services-box3 { 
+                display: flex; 
+                flex-direction: column; 
+                margin-bottom: 16px;
+                border: 16px solid $secondary-background;
+                text-align: center; 
+                background-color: #6969691b;
+                
+    
+                .services-img { 
+                
+                    img { 
+                        width: 100%; 
+                        height: 60%;
+                        
+                    }
+
+                } 
+
+                .services-text {  
+                    
+
+                    .services-heading { 
+                        display: flex; 
+                        justify-content: center; 
+                        align-items: center; 
+                        flex-direction: column; 
+
+                        h3 { 
+                            font-size: 1.5rem;
+                            font-weight: bold;
+
+                        }
+                    }  
+                
+                    p {  
+                    color: $secondary-color; 
+                    font-size: 1rem; 
+                    padding-left: 8px;
+
+                    }
+                }
+            }
+        } 
+    } 
+}
+@media screen and (min-width: $medium) {  
+    #services { 
+        display: flex; 
+        justify-content: center; 
+        align-items: flex-start; 
+
+        .services-container {  
+            flex-flow: row nowrap;
+            flex-direction: row !important; 
+            align-items: flex-start !important; 
+
+            .services-box1, .services-box2, .services-box3 { 
+                .services-text { 
+                    
+                    .service-desc { 
+                        
+                        p {
+                        margin: 8px; 
+                        
+                        }
+                    }
+                }
+            }
+
+            .services-box1 { 
+                order: 1; 
+                border-right: 8px !important;
+            } 
+            .services-box2 { 
+                order: 2; 
+
+            } 
+            .services-box3 { 
+                order: 3; 
+                border-left: 8px !important;
+            }
+        }
+    }
+}
